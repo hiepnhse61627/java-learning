@@ -1,4 +1,4 @@
-package collections_and_generics;
+package collections_and_generics.collections;
 
 import collections_and_generics.model.Contact;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package collections_and_generics;
+package collections_and_generics.collections;
 
 import collections_and_generics.model.Cat;
 import java.util.Arrays;

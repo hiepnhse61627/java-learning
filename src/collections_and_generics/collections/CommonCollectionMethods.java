@@ -1,4 +1,4 @@
-package collections_and_generics;
+package collections_and_generics.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
