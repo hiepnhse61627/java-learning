@@ -5,6 +5,9 @@ public class Dog implements Comparable<Dog> {
   private String name;
   private Integer age;
 
+  public Dog() {
+  }
+
   public Dog(String name, Integer age) {
     this.name = name;
     this.age = age;
@@ -16,6 +19,14 @@ public class Dog implements Comparable<Dog> {
 
   public Integer getAge() {
     return age;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setAge(Integer age) {
+    this.age = age;
   }
 
   @Override
@@ -32,6 +43,14 @@ public class Dog implements Comparable<Dog> {
       return name.equals(otherDog.getName());
     }
     return false;
+  }
+
+  @Override
+  public int hashCode() {
+    int hash = 5;
+    // simple algorithm
+    hash = 83 * hash + this.name.length();
+    return hash;
   }
 
   /*

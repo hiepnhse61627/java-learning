@@ -20,8 +20,7 @@ public class Contact {
 
   @Override
   public boolean equals(Object obj) { // same instance variables used as in equals()!
-    if (obj instanceof Contact) {
-      Contact otherContact = (Contact) obj;
+    if (obj instanceof Contact otherContact) {
       return this.name.equals(otherContact.name) && this.age == otherContact.age;
     }
     return false;
