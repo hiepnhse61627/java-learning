@@ -29,5 +29,8 @@ public class MutableFieldsTest {
     // now different - this is dangerous!
     System.out.println("spotInMap " + spot.hashCode()
         + " in map? : " + dogs.containsKey(spot)); // 418, false
+
+    spot.setName("Spot");
+    System.out.println("spot value: " + dogs.get(spot));
   }
 }
