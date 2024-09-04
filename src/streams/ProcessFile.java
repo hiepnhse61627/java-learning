@@ -25,7 +25,7 @@ class Cat {
 public class ProcessFile {
 
   public static void main(String[] args) {
-    var cats = loadCats("src/resources/Cats.txt");
+    var cats = loadCats("resources/Cats.txt");
     cats.forEach(System.out::println);
   }
 
